@@ -6,6 +6,7 @@
 
 body {
   background-color: #F0ECEE;
+  margin: 15px;
 }
 
 strong {
@@ -21,8 +22,16 @@ button {
   background-color: #FF4850;
   color: white;
   font-size: 18px;
+  font-weight: 300;
 
   width: 100%;
+
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #CCC;
+  color: #FF4850;
 }
 
 .site-title {
@@ -36,17 +45,25 @@ button {
 
 ul {
   list-style: none;
+  font-size: 18px;
+  margin: 10px 0;
   padding-left: 0;
 }
 
 a {
   text-decoration: none;
   color: #88898B;
+  font-weight: 300;
+}
+
+a:hover {
+  color: #FF4850;
 }
 
 .tagline {
   font-style: none;
   font-weight: 600;
+  line-height: 1.5;
 }
 
 .tagline strong {
