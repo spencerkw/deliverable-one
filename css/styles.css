@@ -1,2 +1,61 @@
 @import url(//fonts.googleapis.com/css?family=Fira+Sans);
 
+* {
+  font-family: "Fira Sans", sans-serif;
+}
+
+body {
+  background-color: #F0ECEE;
+}
+
+strong {
+  color: #FF4850;
+  font-style: none;
+}
+
+button {
+  padding: 10px;
+  border-radius: 15px; /*Should this be 5px? That looks closer to the design*/
+  border-style: none;
+
+  background-color: #FF4850;
+  color: white;
+  font-size: 18px;
+
+  width: 100%;
+}
+
+.site-title {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.site-title strong {
+  font-weight: 400;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #88898B;
+}
+
+.tagline {
+  font-style: none;
+  font-weight: 600;
+}
+
+.tagline strong {
+  font-weight: 600;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.0;
+  color: #88898B;
+}
