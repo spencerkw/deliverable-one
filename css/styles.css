@@ -1,19 +1,19 @@
-@import url(//fonts.googleapis.com/css?family=Fira+Sans);
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans);
 
 * {
   font-family: "Fira Sans", sans-serif;
 }
 
-html {
+html { /*To force the page to fill out the window more*/
   min-height: 100vh;
   width: 100vw;
 }
 
 body {
-  min-height: 95vh;
+  min-height: 95vh; /*Also to do with filling out the page*/
   background-color: #F0ECEE;
-  margin: 15px;
-  display: flex;
+  margin: 15px; /*To keep the edges of the page away from the edge of the window*/
+  display: flex; /*Mostly to make the page fill out the whole document*/
   flex-direction: column;
 }
 
@@ -26,13 +26,13 @@ header {
 
 strong {
   color: #FF4850;
-  font-style: none;
+  font-style: none; /*To remove the default bolding*/
 }
 
 button {
   padding: 10px;
   border-radius: 15px; /*Should this be 5px? That looks closer to the design*/
-  border-style: none;
+  border-style: none; /*To remove the default border effect on the buttons*/
 
   background-color: #FF4850;
   color: white;
@@ -41,10 +41,10 @@ button {
 
   width: 100%;
 
-  cursor: pointer;
+  cursor: pointer; /*To make the cursor be the pointer finger when hovering on the buttons*/
 }
 
-button:hover {
+button:hover { /*Changes button colors when hovered*/
   background-color: #CCC;
   color: #FF4850;
 }
@@ -53,7 +53,7 @@ button:hover {
   margin: 0;
   font-size: 22px;
   font-weight: 400;
-  flex: 1;
+  flex: 1; /*To make the title push the rest of the items on the nav bar to the right*/
 }
 
 .site-title strong {
@@ -65,20 +65,20 @@ ul {
   flex-direction: column;
   flex-wrap: wrap;
 
-  list-style: none;
+  list-style: none; /*To remove the bullet points*/
   font-size: 18px;
   margin: 10px 0;
-  padding-left: 0;
+  padding-left: 0; /*To remove the default indent*/
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none; /*To remove the underline*/
   color: #88898B;
   font-weight: 300;
 }
 
 a:hover {
-  color: #FF4850;
+  color: #FF4850; /*To adjust the color when the link is hovered*/
 }
 
 .tagline {
@@ -95,22 +95,23 @@ p {
   font-size: 14px;
   font-weight: 300;
   line-height: 1.0;
-  color: #88898B;
+  color: #88898B; /*Used the link color because no color was specified and it seemed closest*/
 }
 
+/*Media tag to adjust style for desktop mode*/
 @media (min-width: 768px) {
-  body {
+  body { /*Add background image*/
     background-image: url(../img/bulldog.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     margin: 20px 50px;
   }
 
-  header {
+  header { /*Swap the header to a horizontal layout*/
     flex-direction: row;
   }
 
-  ul {
+  ul { /*Swap the nav to a horizontal layout and fix spacing*/
     flex-direction: row;
     justify-content: space-between;
     padding: 0 10px;
@@ -120,17 +121,17 @@ p {
     margin: 0 5px;
   }
 
-  button {
+  button { /*Change button widths as specified*/
     width: auto;
   }
 
-  main {
+  main { /*Force the main to put its contents centered vertically and take up more of the screen than the nav*/
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
     height: 100%;
-    width: 45%;
+    width: 45%; /*Keep the text content to the left of the dog picture as much as possible*/
     flex: 1;
   }
 
@@ -139,10 +140,10 @@ p {
   }
 
   .more-info {
-    padding: 15px 50px;
+    padding: 15px 50px; /*To make this look more like the design*/
   }
 
-  p {
+  p { /*Adjust font size and line spacing as seen in the design*/
     font-size: 20px;
     line-height: 1.25;
   }
